@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { ArrowUpRight, Camera, Globe, MapPin, MessageCircle } from "lucide-react";
+import aboutImage from "./image.png";
+import pixQrCode from "./chave-pix.png";
 
 const e = React.createElement;
 
@@ -115,7 +117,7 @@ function About() {
         "div",
         { className: "section-image" },
         e("img", {
-          src: "/image.png",
+          src: aboutImage,
           alt: "Equipe reunida durante uma ação do Varal Solidário",
         })
       ),
@@ -276,7 +278,7 @@ function PixDonation() {
   return e(
     "aside",
     { className: "pix-donation", "aria-labelledby": "pix-title" },
-    e("img", { src: "/chave-pix.png", alt: "QR Code Pix para doar ao Varal Solidário" }),
+    e("img", { src: pixQrCode, alt: "QR Code Pix para doar ao Varal Solidário" }),
     e(
       "div",
       { className: "pix-content" },
